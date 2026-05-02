@@ -13,7 +13,7 @@ dnf install mysql -y
 if [$? -ne 0]; then
 	echo "Error: my sql installaing is failure"
 else 
-	echo "mysql installation is success" 
+	echo "mysql installation is failure" 
 fi
 
 dnf install nginx -y
@@ -22,7 +22,7 @@ if [$? -ne 0]; then
 	echo "Error: my nginx installaing is failure"
 	exit 1  	# failure is other than 0	
 else 
-	echo "nginx installation is success" 
+	echo "nginx installation is failure" 
 fi 
 
 # $? fecth the last exit code 
